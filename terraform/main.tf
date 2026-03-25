@@ -29,6 +29,7 @@ resource "azurerm_linux_web_app" "app" {
     application_stack {
       node_version = "18-lts"
     }
+    always_on = false # For F1
   }
 
   app_settings = {
